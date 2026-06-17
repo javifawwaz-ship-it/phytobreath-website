@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHYTOBREATH - Inhaler Herbal Daun Sembung</title>
+    <style>
+        /* Palet Warna Visual PPT */
+        :root {
+            --primary-green: #2d6a4f; /* Hijau botol/tua dominan PPT */
+            --accent-green: #74c69d;  /* Hijau muda daun */
+            --light-cream: #f4f7f4;   /* Latar belakang krem lembut */
+            --dark-text: #1b4332;     /* Warna teks gelap */
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-cream);
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
+
+        /* Hero / Header Section */
+        header {
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-green);
+        }
+
+        .meta-info {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-green);
+            margin-bottom: 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 800;
+        }
+
+        header h2 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .author {
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+        }
+
+        /* Container & Layout */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            color: var(--primary-green);
+            margin-bottom: 1.5rem;
+            border-left: 5px solid var(--accent-green);
+            padding-left: 0.75rem;
+        }
+
+        /* Grid Layouts */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Cards Styling */
+        .card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary-green);
+        }
+
+        .card h4 {
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        /* Highlight Stat */
+        .stat-box {
+            background: var(--primary-green);
+            color: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: var(--accent-green);
+            line-height: 1;
+        }
+
+        /* List Styling */
+        ul, ol {
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Timeline / Strategy */
+        .strategy-box {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--accent-green);
+        }
+
+        .badge {
+            background: var(--accent-green);
+            color: var(--primary-green);
+            padding: 0.2rem 0.6rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-green);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            border-top: 4px solid var(--accent-green);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            header h2 { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1: Judul & Identitas -->
+    <header>
+        <div class="meta-info">Esai Ilmiah • PHARMASTERIA 2026</div>
+        <h1>PHYTOBREATH</h1>
+        <h2>Pendekatan Respiratory Phytotherapy melalui Inhaler Herbal Berbasis Daun Sembung (Blumea balsamifera) dalam Pencegahan Reaktivasi Tuberkulosis Laten</h2>
+        <div class="author">
+            <strong>Disusun oleh:</strong> Javier Fawwaz Hibatullah | S1 Kedokteran, Universitas Airlangga
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Slide 2: Urgensi LTBI & Tantangan -->
+        <section>
+            <h3>1. Urgensi & Tantangan TB Laten (LTBI)</h3>
+            <div class="stat-box">
+                <p>Indonesia Menyumbang</p>
+                <div class="stat-number">10%</div>
+                <p><strong>Kasus TB Global</strong> (1 dari 4 populasi dunia terinfeksi TB & 90% berada dalam kondisi TB Laten)</p>
+            </div>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <h4>1. Kesadaran Rendah</h4>
+                    <p>Rendahnya pemahaman masyarakat luas mengenai apa itu Latent Tuberculosis Infection (LTBI).</p>
+                </div>
+                <div class="card">
+                    <h4>2. Diagnosis & Terapi Belum Optimal</h4>
+                    <p>Keterbatasan metode diagnosis serta hambatan kepatuhan terapi jangka panjang dalam pengendalian LTBI.</p>
+                </div>
+                <div class="card">
+                    <h4>3. Hambatan Ekonomi</h4>
+                    <p>Faktor finansial di mana biaya skrining kesehatan dan deteksi dini saat ini dirasa masih kurang terjangkau.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: Potensi Daun Sembung -->
+        <section>
+            <h3>2. Daun Sembung: Warisan Alami</h3>
+            <div class="grid-2">
+                <div class="card">
+                    <h4>Karakteristik Bahan Baku</h4>
+                    <ul>
+                        <li><strong>Melimpah & Berkelanjutan:</strong> Mudah diperbanyak dengan tingkat produktivitas tanaman yang tinggi.</li>
+                        <li><strong>Teruji Tradisional:</strong> Digunakan turun-temurun untuk mengatasi gangguan pernapasan seperti batuk, flu, bronkitis, dan asma.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Kandungan Senyawa Bioaktif</h4>
+                    <ul>
+                        <li><strong>Flavonoid:</strong> Berperan sebagai Antioksidan yang melindungi sel dari stres oksidatif.</li>
+                        <li><strong>Terpenoid:</strong> Berperan sebagai Imunomodulator untuk meningkatkan daya tahan tubuh.</li>
+                        <li><strong>1,8-cineole & Borneol:</strong> Antimikroba respiratorik yang membantu melawan mikroba penyebab infeksi saluran napas.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3 & 4: Keunggulan Formulasi -->
+        <section style="background-color: var(--primary-green); color: var(--white); padding: 2.5rem; border-radius: 12px;">
+            <h3 style="color: var(--white); border-left-color: var(--accent-green);">3. Formula Produk Phytobreath</h3>
+            <p style="margin-bottom: 1.5rem; opacity: 0.9;">Inovasi ini mengusung formula yang <strong>Tersedia</strong> alamiah, <strong>Diterima</strong> masyarakat, serta teruji secara <strong>Ilmiah</strong>.</p>
+            <div class="grid-2">
+                <div>
+                    <p><strong>• Herbal Alami:</strong> Aman digunakan dengan potensi efek samping yang minimal bagi organ tubuh.</p>
+                    <p><strong>• Praktis:</strong> Dikemas dalam bentuk inhaler agar mudah dibawa dan digunakan kapan saja.</p>
+                </div>
+                <div>
+                    <p><strong>• Respiratory Delivery:</strong> Penghantaran langsung senyawa aktif ke target melalui sistem inhalasi.</p>
+                    <p><strong>• Preventif:</strong> Fokus mendukung kesehatan paru sekaligus mencegah reaktivasi LTBI menjadi aktif.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: Strategi Implementasi -->
+        <section>
+            <h3>4. Alur & Strategi Implementasi</h3>
+            <div class="grid-2">
+                <div>
+                    <div class="badge">Jangka Pendek (2026: Q2-Q4)</div>
+                    <div class="strategy-box">
+                        <ol>
+                            <li>Formulasi Phytobreath (Ekstraksi/Maserasi)</li>
+                            <li>Pembuatan Prototipe Inhaler</li>
+                            <li>Validasi Awal Produk</li>
+                            <li>Optimalisasi Bahan Lokal</li>
+                        </ol>
+                    </div>
+                </div>
+                <div>
+                    <div class="badge">Jangka Panjang (2027-2028)</div>
+                    <div class="strategy-box">
+                        <ol>
+                            <li>Implementasi langsung di masyarakat</li>
+                            <li>Edukasi & promosi kesehatan pernapasan</li>
+                            <li>Pengembangan produk herbal modern berskala</li>
+                            <li>Pemanfaatan biodiversitas lokal berkelanjutan</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: Dampak & Penutup -->
+        <section>
+            <h3>5. Dampak Positif (Konklusi)</h3>
+            <div class="grid-2">
+                <div class="card">
+                    <h4>Bagi Individu & Masyarakat</h4>
+                    <p>Menjaga kesehatan saluran pernapasan secara praktis, mendorong pemanfaatan tanaman obat lokal, serta membangun budaya sehat berbasis herbal alami.</p>
+                </div>
+                <div class="card">
+                    <h4>Bagi Sistem Kesehatan & Negara</h4>
+                    <p>Mendukung pendekatan preventif dalam pengendalian tuberkulosis berkelanjutan, serta mengangkat potensi inovasi kesehatan berbasis biodiversitas asli Indonesia.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer / Credit Universitas Gunadarma & Himafarsi sesuai logo penyelenggara -->
+    <footer>
+        <p>PHARMASTERIA 2026 — Universitas Gunadarma & HIMAFARSI</p>
+        <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 0.5rem;">Dibuat berdasarkan materi presentasi ilmiah Phytobreath.</p>
+    </footer>
+
+</body>
+</html>
